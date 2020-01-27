@@ -1,6 +1,6 @@
 ---
 # defaults file for usercreate
-username: anu
+username: nivedha
 userpass: 123
 usergroup: ec2-user
-userhome: /home/
+
