@@ -1,5 +1,6 @@
 ---
-# vars file for usercreate
+# vars file for userdelete
  uname: "{{ username }}"
  upass: " {{ userpass }}"
  ugroup: "{{ usergroup }}"
+

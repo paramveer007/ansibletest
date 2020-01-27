@@ -1,8 +1,9 @@
 ---
-# tasks file for user delete
+# tasks file for userdelete
 - user:
     name: "{{ uname }}"
     password: "{{ upass }}"
     group: "{{ ugroup }}"
     home: /home/
     state: absent
+
