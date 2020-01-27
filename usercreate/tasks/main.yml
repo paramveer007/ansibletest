@@ -5,4 +5,4 @@
     password: "{{ upass }}"
     group: "{{ ugroup }}"
     home: /home/
-    state: absent
+    state: present
