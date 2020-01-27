@@ -4,5 +4,5 @@
     name: "{{ uname }}"
     password: "{{ upass }}"
     group: "{{ ugroup }}"
-    home: "{{ uhome }}"
+    home: /home/
     state: present
