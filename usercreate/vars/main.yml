@@ -3,3 +3,7 @@
  uname: "{{ username }}"
  upass: " {{ userpass }}"
  ugroup: "{{ usergroup }}"
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 06213350a3a18d4134eb237be1c975f7125cd5fd

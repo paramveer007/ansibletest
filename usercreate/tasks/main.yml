@@ -5,4 +5,8 @@
     password: "{{ upass }}"
     group: "{{ ugroup }}"
     home: /home/
+<<<<<<< HEAD
     state: absent
+=======
+    state: present
+>>>>>>> 06213350a3a18d4134eb237be1c975f7125cd5fd
