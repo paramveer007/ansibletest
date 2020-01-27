@@ -2,5 +2,4 @@
 # defaults file for usercreate
 username: nivedha
 userpass: 123
-usergroup: ec2-user
-
+usergroup: root
