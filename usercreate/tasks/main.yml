@@ -1,0 +1,8 @@
+---
+# tasks file for usercreate
+- user:
+    name: "{{ uname }}"
+    password: "{{ upass }}"
+    group: "{{ ugroup }}"
+    home: "{{ uhome }}"
+    state: present

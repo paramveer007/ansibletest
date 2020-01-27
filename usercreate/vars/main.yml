@@ -1,0 +1,6 @@
+---
+# vars file for usercreate
+ uname: "{{ username }}"
+ upass: " {{ userpass }}"
+ ugroup: "{{ usergroup }}"
+ uhome: "{{ userhome }}"

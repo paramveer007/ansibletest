@@ -1,0 +1,6 @@
+--
+- name: running a usercreate role
+  hosts: all
+  become: true
+  roles:
+  - usercreate

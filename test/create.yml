@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: create a file
+    file:
+      path: "./t1.txt"
+      state: touch
+      mode: 0777
