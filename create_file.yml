@@ -1,9 +1,0 @@
----
-- hosts: localhost
-  become: true
-  tasks:
-  - name: Create file
-    file:
-      path: "/home/pranjala/newfile.txt"
-      state: touch
-      mode: 0777
