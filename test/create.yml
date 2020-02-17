@@ -1,5 +1,5 @@
 ---
-- hosts: centos7
+- hosts: all
   become: true
   tasks:
   - name: create a file
