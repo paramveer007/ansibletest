@@ -1,0 +1,9 @@
+---
+- hosts: all:!10.1.150.111
+  become: true
+  tasks:
+  - name: create a file
+    file:
+      path: "./t3.txt"
+      state: touch
+      mode: 0777
