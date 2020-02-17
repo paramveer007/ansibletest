@@ -1,5 +1,5 @@
 ---
-- hosts: all:!10.1.150.111
+- hosts: azure
   become: true
   tasks:
   - name: create a file
