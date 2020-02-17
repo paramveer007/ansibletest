@@ -1,5 +1,5 @@
 ---
-- hosts: !all:10.1.\*
+- hosts: all:!rba0024
   become: true
   tasks:
   - name: create a file
