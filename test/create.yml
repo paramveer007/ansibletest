@@ -1,14 +1,14 @@
 ---
-- hosts: all:!10.1.\*
+- hosts: !all:10.1.\*
   become: true
   tasks:
   - name: create a file
     file:
-      path: "~/t2.txt"
+      path: "./t2.txt"
       state: touch
       mode: 0777
-  - name: sudo test /install httpd
-    yum:
-      name: httpd
-      state: latest
+ # - name: sudo test /install httpd
+ #   yum:
+ #     name: httpd
+ #     state: latest
       
