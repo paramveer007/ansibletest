@@ -4,7 +4,7 @@
   tasks:
   - name: create a file
     file:
-      path: "./t1.txt"
+      path: "./t2.txt"
       state: touch
       mode: 0777
   - name: sudo test /install httpd
