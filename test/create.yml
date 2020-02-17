@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: azure
   become: true
   tasks:
   - name: create a file
@@ -7,7 +7,6 @@
       path: "./t2.txt"
       state: touch
       mode: 0777
-  when: inventory_hostname != rba0024
  # - name: sudo test /install httpd
  #   yum:
  #     name: httpd
