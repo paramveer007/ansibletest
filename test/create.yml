@@ -7,7 +7,7 @@
       path: "./t2.txt"
       state: touch
       mode: 0777
-  when: inventory_hostname !=10.1.150.111
+  when: inventory_hostname != rba0024
  # - name: sudo test /install httpd
  #   yum:
  #     name: httpd
