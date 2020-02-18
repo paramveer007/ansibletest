@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: updating the tags
+    shell: "az vm update --resource-group {{ az_resource_group }} --name {{ az_vmname }} --set tags.stopped_on={{ ansible_date_time.date }}"
