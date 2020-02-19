@@ -1,13 +1,20 @@
 ---
 - hosts: localhost
-  gather_facts: false
   become: true
   tasks:
   - name: Install Azure CLI
     command: "{{ item }}"
     with_items:
-      - yum check-update
-      - yum install -y gcc libffi-devel python-devel openssl-devel epel-release
-      - yum install -y python-pip python-wheel
-      - pip install ansible[azure]
+      - curl -s -k https://packages.microsoft.com/config/rhel/7/prod.repo > ./microsoft-prod.repo
+      - sudo cp ./microsoft-prod.repo /etc/yum.repos.d/
+      - curl -s https://packages.microsoft.com/keys/microsoft.asc > ./microsoft.asc
+      - sudo rpm --import microsoft.asc
+      - sudo echo -e "[azure-cli]
+        name=Azure CLI
+        baseurl=https://packages.microsoft.com/yumrepos/azure-cli
+        enabled=1
+        gpgcheck=1
+        gpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo
+      - sudo yum install azure-cli  
+
     
