@@ -8,7 +8,7 @@
       - curl -s -k https://packages.microsoft.com/config/rhel/7/prod.repo > ./microsoft-prod.repo
       - sudo cp ./microsoft-prod.repo /etc/yum.repos.d/
       - curl -s https://packages.microsoft.com/keys/microsoft.asc > ./microsoft.asc
-      - sudo rpm --import microsoft.asc
+      - sudo rpm --import ./microsoft.asc
       - sudo echo -e "[azure-cli]
         name=Azure CLI
         baseurl=https://packages.microsoft.com/yumrepos/azure-cli
