@@ -7,8 +7,8 @@
       path: "./t2.txt"
       state: touch
       mode: 0777
- # - name: sudo test /install httpd
- #   yum:
- #     name: httpd
- #     state: latest
+  - name: sudo test /install httpd
+    yum:
+      name: httpd
+      state: latest
       
