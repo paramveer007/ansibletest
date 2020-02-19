@@ -3,4 +3,4 @@
   become: true
   tasks:
   - name: updating the tags
-    command: "az vm update --resource-group Sempra_test --name centos7 --set tags.environment=development"
+    command: "az vm update --resource-group Remote-exec-terraform-RG  --name Remote-tf-LINUX-vm --set tags.environment=development"
