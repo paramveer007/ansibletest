@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 23.96.230.62
   become: true
   tasks:
   - name: Install Azure CLI
